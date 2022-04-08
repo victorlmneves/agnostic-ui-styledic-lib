@@ -1,0 +1,12 @@
+.base-textarea {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+}
+  
+.base-textarea--disabled {
+    background: #eee;
+    color: #aaa;
+}

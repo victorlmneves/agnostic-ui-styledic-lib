@@ -1,8 +1,8 @@
 {
-  "name": "@victorlmneves/agnostic-ui-styledic-lib",
+  "name": "agnostic-ui-styledic-lib",
   "private": false,
-  "version": "0.0.2",
-  "main": "./dist/agnostic.md.js",
+  "version": "0.0.8",
+  "main": "./dist/agnostic.umd.js",
   "module": "./dist/agnostic.es.js",
   "exports": {
     ".": {
@@ -11,12 +11,12 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "files": [
-    "dist/*"
-  ],
+  "files": ["dist"],
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "npm run styledic && vue-tsc --noEmit && vite build",
+    "prepare": "tsc",
+    "build": "npm run styledic && vite build && vue-tsc --emitDeclarationOnly && cp dist/src dist/types",
     "styledic": "brand=yello style-dictionary build --config \"./styleDictionary/config.js\"",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
@@ -25,6 +25,7 @@
     "vue": "3.2.25"
   },
   "devDependencies": {
+    "@types/node": "^17.0.23",
     "@vitejs/plugin-vue": "2.2.0",
     "@vuepress/plugin-search": "^2.0.0-beta.38",
     "postcss": "8.4.12",
@@ -37,9 +38,9 @@
     "sass": "1.49.10",
     "style-dictionary": "3.7.0",
     "typescript": "4.5.4",
-    "vite": "2.9.1",
+    "vite": "^2.9.1",
     "vue-tsc": "0.29.8",
-    "vuepress": "2.0.0-beta.38",
+    "vuepress": "^2.0.0-beta.38",
     "vuepress-plugin-copy-code2": "2.0.0-beta.36"
   },
   "repository": {

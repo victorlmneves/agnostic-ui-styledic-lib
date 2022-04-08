@@ -1,5 +1,5 @@
 // const VueExamplePlugin = require('vuepress-plugin-vue-example')
-const { copyCode } = require('vuepress-plugin-copy-code2')
+// const { copyCode } = require('vuepress-plugin-copy-code2')
 const path = require('path')
 
 module.exports = {
@@ -18,17 +18,17 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: 'Search',
-          },
-        },
-      },
-    ],
+  // plugins: [
+  //   [
+  //     '@vuepress/plugin-search',
+  //     {
+  //       locales: {
+  //         '/': {
+  //           placeholder: 'Search',
+  //         },
+  //       },
+  //     },
+  //   ],
     // copyCode({
     //   // your options
     // })
@@ -37,5 +37,5 @@ module.exports = {
     //   // You can use sub-directories to separate examples into categories.
     //   componentsPath: '/docs/.examples/'
     // })
-  ],
+  // ],
 }

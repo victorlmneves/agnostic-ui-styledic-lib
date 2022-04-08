@@ -46,16 +46,4 @@ const onKeyUp = (e: KeyboardEvent) => {
     ></textarea>
 </ClientOnly>
 
-<style scoped>
-.base-textarea {
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid #ccc;
-  background: #fff;
-  color: #000;
-}
-
-.base-textarea--disabled {
-  background: #eee;
-  color: #aaa;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="/style.css">
