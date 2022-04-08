@@ -36,10 +36,6 @@ export default defineConfig({
       __dirname,
       `./styleDictionary/build/scss/`
       ),
-      '@css-custom-tokens': path.resolve(
-        __dirname,
-        `./src/assets/scss/tokens/`
-      ),
       '@css-components': path.resolve(
         __dirname,
         `./src/assets/scss/components/`
