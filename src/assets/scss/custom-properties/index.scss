@@ -29,6 +29,12 @@
     --sizes-spacings-xxs: $sizes-spacings-s-xxs;
     --sizes-page-margin-hor: var(--sizes-spacings-m);
     --size-page-min: $sizes-page-min;
+    --col-button: $col-background-button-default;
+    --col-button-disabled: $col-background-button-disabled;
+    --col-button-active: $col-background-button-active;
+    --col-button-bg-secondary: $col-background-main;
+    --shadow-button: $shadow-button;
+    --button-font-size: $font-size-m;
 }
 
 @media ( --lg-up ) {
@@ -40,5 +46,6 @@
         --sizes-spacings-s: $sizes-spacings-l-s;
         --sizes-spacings-xs: $sizes-spacings-l-xs;
         --sizes-spacings-xxs: $sizes-spacings-l-xxs;
+        --button-font-size: $font-size-l;
     }
 }
