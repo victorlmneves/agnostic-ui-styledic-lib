@@ -1,7 +1,6 @@
 {
   "name": "agnostic-ui-styledic-lib",
-  "private": false,
-  "version": "0.0.8",
+  "version": "0.0.10",
   "main": "./dist/agnostic.umd.js",
   "module": "./dist/agnostic.es.js",
   "exports": {
@@ -16,12 +15,14 @@
   "scripts": {
     "dev": "vite",
     "prepare": "tsc",
-    "build": "npm run styledic && vite build && vue-tsc --emitDeclarationOnly && cp dist/src dist/types",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
     "styledic": "brand=yello style-dictionary build --config \"./styleDictionary/config.js\"",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "agnostic-ui-styledic-lib": "agnostic-ui-styledic-lib-0.0.10.tgz",
     "vue": "3.2.25"
   },
   "devDependencies": {

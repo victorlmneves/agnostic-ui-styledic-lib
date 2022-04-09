@@ -4,12 +4,12 @@ const path = require('path')
 const copy = require('rollup-plugin-copy')
 
 // https://vitejs.dev/config/
-module.exports = defineConfig({
+export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/index.js'),
+      entry: path.resolve(__dirname, './src/index.ts'),
       name: 'agnostic',
-      fileName: (format) => `agnostic.${format}.js`,
+      fileName: (format: string) => `agnostic.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
@@ -29,6 +29,7 @@ module.exports = defineConfig({
     },
   },
   resolve: {
+    dedupe: ["vue"],
     alias: {
       '/@': path.resolve(__dirname, './src'),
       '@css': path.resolve(__dirname, `./src/assets/scss`),
