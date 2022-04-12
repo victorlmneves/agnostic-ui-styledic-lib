@@ -28,6 +28,30 @@
             "success": {
                 "value": "{col.base.success.value}",
                 "type": "color"
+            },
+            "bottom": {
+                "value": "{col.base.grey.100.value}",
+                "type": "color"
+            },
+            "top": {
+                "value": "{col.base.grey.100.value}",
+                "type": "color"
+            },
+            "left": {
+                "value": "{col.base.grey.100.value}",
+                "type": "color"
+            },
+            "right": {
+                "value": "{col.base.grey.100.value}",
+                "type": "color"
+            },
+            "width": {
+                "value": "1px",
+                "type": "string"
+            },
+            "style": {
+                "value": "solid",
+                "type": "string"
             }
         }
     }

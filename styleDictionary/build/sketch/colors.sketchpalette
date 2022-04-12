@@ -500,6 +500,34 @@
       "alpha": 1
     },
     {
+      "name": "colBorderBottom",
+      "red": "0.95",
+      "green": "0.95",
+      "blue": "0.95",
+      "alpha": 1
+    },
+    {
+      "name": "colBorderTop",
+      "red": "0.95",
+      "green": "0.95",
+      "blue": "0.95",
+      "alpha": 1
+    },
+    {
+      "name": "colBorderLeft",
+      "red": "0.95",
+      "green": "0.95",
+      "blue": "0.95",
+      "alpha": 1
+    },
+    {
+      "name": "colBorderRight",
+      "red": "0.95",
+      "green": "0.95",
+      "blue": "0.95",
+      "alpha": 1
+    },
+    {
       "name": "colBrand",
       "red": "1.00",
       "green": "0.95",

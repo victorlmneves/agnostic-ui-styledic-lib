@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Sat, 09 Apr 2022 15:38:12 GMT
+// Generated on Tue, 12 Apr 2022 09:27:49 GMT
 
 $font-lh-caption: 1.5;
 $font-lh-copy: 1.5;
@@ -79,6 +79,8 @@ $sizes-breakpoints-xs: 320px;
 $border-radius-l: 12px;
 $border-radius-m: 10px;
 $border-radius-s: 8px;
+$col-border-style: solid;
+$col-border-width: 1px;
 $col-base-eyecatcher-eco: #01C8B0;
 $col-base-eyecatcher-general: #FF5858;
 $col-base-error: #DA1E28;
@@ -150,6 +152,10 @@ $col-type-inverse: $col-base-white;
 $col-type-default: $col-base-black;
 $col-emphasized: $col-base-eyecatcher-general;
 $col-brand: $col-base-yellow;
+$col-border-right: $col-base-grey-100;
+$col-border-left: $col-base-grey-100;
+$col-border-top: $col-base-grey-100;
+$col-border-bottom: $col-base-grey-100;
 $col-border-success: $col-base-success;
 $col-border-warn: $col-base-warn;
 $col-border-alert: $col-base-error;

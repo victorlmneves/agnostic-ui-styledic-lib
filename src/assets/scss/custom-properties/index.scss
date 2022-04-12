@@ -35,6 +35,12 @@
     --col-button-bg-secondary: $col-background-main;
     --shadow-button: $shadow-button;
     --button-font-size: $font-size-m;
+    --input-border-bottom: $col-border-bottom;
+    --input-border-top: $col-border-top;
+    --input-border-left: $col-border-left;
+    --input-border-right: $col-border-right;
+    --input-border-width: $col-border-width;
+    --input-border-style: $col-border-style;
 }
 
 @media ( --lg-up ) {

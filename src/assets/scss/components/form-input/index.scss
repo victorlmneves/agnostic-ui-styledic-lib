@@ -1,6 +1,11 @@
 .base-input {
     padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
+    border-bottom: var(--input-border-bottom);
+    border-left: var(--input-border-left);
+    border-right: var(--input-border-right);
+    border-top: var(--input-border-top);
+    border-width: var(--input-border-width);
+    border-style: var(--input-border-style);
     border-radius: 4px;
     background: #fff;
     color: #000;

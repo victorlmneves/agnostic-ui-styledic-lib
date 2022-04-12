@@ -46,17 +46,4 @@ const onKeyUp = (e: KeyboardEvent) => {
   />
 </ClientOnly>
 
-<style scoped>
-.base-input {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
-  color: #000;
-}
-
-.base-input--disabled {
-  background: #eee;
-  color: #aaa;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="/style.css">

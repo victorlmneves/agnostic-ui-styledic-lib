@@ -6,19 +6,43 @@ const copy = require('rollup-plugin-copy')
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    minify: 'esbuild',
+    cssCodeSplit: true,
     lib: {
-      entry: path.resolve(__dirname, './src/index.ts'),
-      name: 'agnostic',
-      fileName: (format: string) => `agnostic.${format}.js`,
+      entry: path.resolve(__dirname, './src/components/index.js'),
+      name: 'agnostic-ui-styledic-lib',
+      fileName: (format: string) => `agnostic-ui-styledic-lib.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
-      output: {
+      // output: {
+      //   globals: {
+      //     vue: 'Vue'
+      //   }
+      // }
+      output: [{
+        format: "esm",
+        esModule: true,
+        exports: "named",
         globals: {
-          vue: 'Vue'
+          vue: "Vue"
         }
-      }
-    }
+      }, {
+        format: "umd",
+        // inlineDynamicImports: true,
+        interop: "esModule",
+        exports: "named",
+        globals: {
+          vue: "Vue"
+        }
+      }, {
+        format: 'cjs',
+        exports: "named",
+        globals: {
+          vue: "Vue"
+        }
+      }],
+    },
   },
   css: {
     preprocessorOptions: {
